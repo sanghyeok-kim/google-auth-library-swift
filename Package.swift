@@ -30,7 +30,7 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/apple/swift-nio.git", from: "2.59.0"),
     .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", "1.1.3"..."1.3.2"),
-    .package(url: "https://github.com/attaswift/BigInt", .exact("3.2.0"))
+    .package(url: "https://github.com/attaswift/BigInt", .upToNextMajor(from: "3.1.0")),
   ],
   targets: [
     .target(name: "OAuth1",
