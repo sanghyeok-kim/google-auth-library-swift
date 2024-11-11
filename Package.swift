@@ -28,8 +28,8 @@ let package = Package(
     .library(name: "SwiftyBase64", targets: ["SwiftyBase64"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-nio.git", from: "2.59.0"),
-    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", "1.1.3"..."1.3.2"),
+    .package(url: "https://github.com/apple/swift-nio.git", .exact("2.32.3")),
+    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.0.0")),
     .package(url: "https://github.com/attaswift/BigInt", .upToNextMajor(from: "3.1.0")),
   ],
   targets: [
