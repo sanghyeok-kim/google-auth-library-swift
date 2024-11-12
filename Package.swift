@@ -51,18 +51,17 @@
 //   ]
 // )
 
-// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
-    name: "AuthLibrary",
+    name: "Auth",
     platforms: [
         .iOS(.v10)
     ],
     products: [
         .library(
-            name: "AuthLibrary",
-            targets: ["AuthLibrary"]
+            name: "OAuth2",
+            targets: ["OAuth2"]
         ),
     ],
     dependencies: [
@@ -75,13 +74,13 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "AuthLibrary",
+            name: "OAuth2",
             dependencies: [
                 "CryptoSwift",
                 "BigInt",
                 "SwiftyBase64",
                 .product(name: "NIO", package: "swift-nio"),
-                .product(name: "NIOHTTP1", package: "swift-nio"),
+                // .product(name: "NIOHTTP1", package: "swift-nio"),
                 // .product(name: "FirebaseCore", package: "firebase-ios-sdk"),
                 // .product(name: "FirebaseFunctions", package: "firebase-ios-sdk"),
                 // .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
@@ -101,5 +100,4 @@ let package = Package(
             ]
         )
     ],
-    swiftLanguageVersions: [.v5]
 )
