@@ -99,5 +99,5 @@ let package = Package(
                 "OAuth2/FCMTokenProvider/FCMTokenProvider.swift"
             ]
         )
-    ],
+    ]
 )
