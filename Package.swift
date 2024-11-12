@@ -70,7 +70,7 @@ let package = Package(
         .package(url: "https://github.com/attaswift/BigInt", from: "3.1.0"),
         .package(url: "https://github.com/saoudrizwan/SwiftyBase64.git", from: "1.1.1"),
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.32.0"),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "9.0.0")
+        // .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "9.0.0")
     ],
     targets: [
         .target(
@@ -81,9 +81,9 @@ let package = Package(
                 "SwiftyBase64",
                 .product(name: "NIO", package: "swift-nio"),
                 .product(name: "NIOHTTP1", package: "swift-nio"),
-                .product(name: "FirebaseCore", package: "firebase-ios-sdk"),
-                .product(name: "FirebaseFunctions", package: "firebase-ios-sdk"),
-                .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
+                // .product(name: "FirebaseCore", package: "firebase-ios-sdk"),
+                // .product(name: "FirebaseFunctions", package: "firebase-ios-sdk"),
+                // .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
                 // .product(name: "FirebaseFirestore", package: "firebase-ios-sdk")
             ],
             path: "Sources",
