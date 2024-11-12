@@ -37,7 +37,7 @@ let package = Package(
             // dependencies: ["CryptoSwift", "TinyHTTPServer"]),
     .target(name: "OAuth2",
             // dependencies: ["CryptoSwift", "TinyHTTPServer", "BigInt", "SwiftyBase64"],
-	    dependencies: ["CryptoSwift", "BigInt", "SwiftyBase64"],
+	    dependencies: ["CryptoSwift", "BigInt", "SwiftyBase64", "TinyHTTPServer"],
             exclude: ["FCMTokenProvider"]),
     // .target(name: "TinyHTTPServer",
 	    // dependencies: ["NIO", "NIOHTTP1"]),
