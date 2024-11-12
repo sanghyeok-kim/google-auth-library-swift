@@ -68,7 +68,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
         .package(url: "https://github.com/attaswift/BigInt", from: "3.1.0"),
-        .package(url: "https://github.com/saoudrizwan/SwiftyBase64.git", from: "1.1.1"),
+        // .package(url: "https://github.com/saoudrizwan/SwiftyBase64.git", from: "1.1.1"),
+        .package(url: "https://github.com/drichardson/SwiftyBase64.git", from: "1.1.1"),
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.32.0"),
         // .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "9.0.0")
     ],
