@@ -66,16 +66,16 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMinor(from: "1.0.0")),
-        .package(url: "https://github.com/attaswift/BigInt.git", .upToNextMinor(from: "3.1.0")),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.0.0")),
+        .package(url: "https://github.com/attaswift/BigInt.git", .exact("3.1.0")),
         
 //        .package(url: "https://github.com/nekonako/SwiftyBase64.git", .upToNextMinor(from: "1.1.1")),
 ///        github.com: https://github.com/nekonako/SwiftyBase64.git: The remote repository could not be accessed. Make sure a valid repository exists at the specified location and that the correct credentials have been supplied.
-        .package(url: "https://github.com/drichardson/SwiftyBase64.git", .upToNextMinor(from: "1.1.1")),
+        .package(url: "https://github.com/drichardson/SwiftyBase64.git", .exact("1.1.1")),
 
         
         
-        .package(url: "https://github.com/apple/swift-nio.git", .exact("2.0.0")),
+        .package(url: "https://github.com/apple/swift-nio.git", .exact("2.32.3")),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .exact("10.28.1")),
     ],
     targets: [
