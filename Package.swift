@@ -66,14 +66,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.0.0")),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.1.0")), // SPM 최소 지원 버전 (1.1.0)
         .package(url: "https://github.com/attaswift/BigInt.git", .exact("3.1.0")),
         
 //        .package(url: "https://github.com/nekonako/SwiftyBase64.git", .upToNextMinor(from: "1.1.1")),
 ///        github.com: https://github.com/nekonako/SwiftyBase64.git: The remote repository could not be accessed. Make sure a valid repository exists at the specified location and that the correct credentials have been supplied.
-        .package(url: "https://github.com/drichardson/SwiftyBase64.git", .exact("1.1.1")),
-
-        
+//        .package(url: "https://github.com/drichardson/SwiftyBase64.git", .exact("1.1.1")), // 1.1.1 SPM 지원X
+        .package(url: "https://github.com/drichardson/SwiftyBase64.git", .branch("master")),
         
         .package(url: "https://github.com/apple/swift-nio.git", .exact("2.32.3")),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .exact("10.28.1")),
@@ -86,9 +85,9 @@ let package = Package(
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "SwiftyBase64", package: "SwiftyBase64"),
                 .product(name: "NIO", package: "swift-nio"),
-                .product(name: "FirebaseAuth", package: "Firebase"),
-                .product(name: "FirebaseCore", package: "Firebase"),
-                .product(name: "FirebaseFunctions", package: "Firebase")
+                .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
+//                .product(name: "FirebaseCore", package: "firebase-ios-sdk"), //'FirebaseCore' required by package 'google-auth-library' target 'Auth' not found in package 'firebase-ios-sdk'.
+                .product(name: "FirebaseFunctions", package: "firebase-ios-sdk")
             ],
             path: "Sources",
             exclude: [],
