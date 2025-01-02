@@ -76,7 +76,7 @@ let package = Package(
         
         
         .package(url: "https://github.com/apple/swift-nio.git", .exact("2.0.0")),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMinor(from: "10.29.0"))
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .exact("10.28.1")),
     ],
     targets: [
         .target(
