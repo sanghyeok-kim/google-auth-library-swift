@@ -55,7 +55,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Auth",
+    name: "OAuth2",
     platforms: [
         .iOS(.v10)
     ],
@@ -92,15 +92,16 @@ let package = Package(
             path: "Sources",
             exclude: [],
             sources: [
-                "OAuth2/Code.swift",
-                "OAuth2/Connection.swift",
-                "OAuth2/ServiceAccountTokenProvider/ASN1.swift",
-                "OAuth2/ServiceAccountTokenProvider/JWT.swift",
-                "OAuth2/ServiceAccountTokenProvider/RSA.swift",
-                "OAuth2/ServiceAccountTokenProvider/ServiceAccountTokenProvider.swift",
-                "OAuth2/Token.swift",
-                "OAuth2/TokenProvider.swift",
-                "OAuth2/FCMTokenProvider/FCMTokenProvider.swift"
+//                "OAuth2/Code.swift",
+//                "OAuth2/Connection.swift",
+//                "OAuth2/ServiceAccountTokenProvider/ASN1.swift",
+//                "OAuth2/ServiceAccountTokenProvider/JWT.swift",
+//                "OAuth2/ServiceAccountTokenProvider/RSA.swift",
+//                "OAuth2/ServiceAccountTokenProvider/ServiceAccountTokenProvider.swift",
+//                "OAuth2/Token.swift",
+//                "OAuth2/TokenProvider.swift",
+//                "OAuth2/FCMTokenProvider/FCMTokenProvider.swift"
+                "OAuth2"
             ]
         )
     ]
