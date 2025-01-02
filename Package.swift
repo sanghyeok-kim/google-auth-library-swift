@@ -55,7 +55,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "OAuth2",
+    name: "Auth",
     platforms: [
         .iOS(.v10)
     ],
