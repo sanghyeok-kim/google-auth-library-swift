@@ -61,8 +61,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Auth",
-            targets: ["Auth"]
+            name: "OAuth2",
+            targets: ["OAuth2"]
         ),
     ],
     dependencies: [
@@ -79,7 +79,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Auth",
+            name: "OAuth2",
             dependencies: [
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
                 .product(name: "BigInt", package: "BigInt"),
